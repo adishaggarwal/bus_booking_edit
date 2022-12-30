@@ -12,7 +12,9 @@ module.exports = (credentials = []) => {
     // Find JWT in Headers
     const token = req.headers["authorization"];
     if (!token) {
-      return res.status(401).send("Sorry friend, you are not an authorized user");
+      return res
+        .status(401)
+        .send("Sorry friend, you are not an authorized user");
     } else {
       // Validate JWT
       // Bearer yndujsoIn...
@@ -30,7 +32,7 @@ module.exports = (credentials = []) => {
           if (
             decoded.scopes &&
             decoded.scopes.length &&
-            credentials.some(cred => decoded.scopes.indexOf(cred) >= 0)
+            credentials.some((cred) => decoded.scopes.indexOf(cred) >= 0)
           ) {
             next();
           } else {

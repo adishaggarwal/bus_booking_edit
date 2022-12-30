@@ -1,6 +1,11 @@
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/bookingsystem',{ useNewUrlParser: true,useUnifiedTopology: true,useFindAndModify:false})
-    .then(()=>console.log("Database connected"))
-    .catch(()=> console.log(error));
+const mongoose = require("mongoose");
+mongoose
+  .connect("mongodb://127.0.0.1:27017/bus_bookingsystem", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+  })
+  .then(() => console.log("Database connected"))
+  .catch(() => console.log(error));
 
 module.exports = mongoose;
