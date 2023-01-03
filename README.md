@@ -14,8 +14,8 @@ Both the admin and customer collection files can be found in the Postman_collect
 
 # CUSTOMER AND ADMIN SCHEMAS
 
-![](images/1.PNG)
-![](images/2.PNG)
+![](/images/1.PNG)
+![](/images/2.PNG)
 
 # OVERVIEW
 There are two schemas customer and admin.
