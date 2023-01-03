@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "9ecfb4b7-b9ab-4297-854b-8a6485064e05",
+		"name": "CUSTOMER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL OPEN TICKETS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/opentickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"opentickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BOOK TICKET",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Adish\",\r\n    \"age\":24\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/bookticket/1/63b378eae9ea4d01e0767094",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookticket",
+						"1",
+						"63b378eae9ea4d01e0767094"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET TICKET STATUS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/ticketstatus/63ad2dcbb2e0374d00774ec3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ticketstatus",
+						"63ad2dcbb2e0374d00774ec3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CANCEL TICKET BY CUSTOMER",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cancelcustomer/63ad2dcbb2e0374d00774ec3/39",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cancelcustomer",
+						"63ad2dcbb2e0374d00774ec3",
+						"39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET TICKET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tickets/63ad2dcbb2e0374d00774ec3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tickets",
+						"63ad2dcbb2e0374d00774ec3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
