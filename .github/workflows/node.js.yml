@@ -9,8 +9,8 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-  
-  steps:
+
+    steps:
     - uses: actions/checkout@v6
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
